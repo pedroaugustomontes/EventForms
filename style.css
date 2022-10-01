@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   background: #E5E5E5;
 }
+
 body::before {
   background: #121214;
   position: absolute;
@@ -16,6 +17,7 @@ body::before {
   height: 360px;
   width: 100%;
 }
+
 body, input, select, textarea {
   font-family: 'Poppins', sans-serif;
 }
@@ -99,6 +101,7 @@ fieldset legend {
 
   color: #C1BCCC;
 }
+
 .input-wrapper label span:hover {
   margin-left: 12px;
 
@@ -140,6 +143,23 @@ fieldset legend {
   background-position: right 24px top 50%;
 }
 
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox-wrapper input:focus + label:before {
+  outline: 2px solid #000;
+}
+
 .checkbox-wrapper label {
   font-size: 14px;
   line-height: 24px;
@@ -159,6 +179,7 @@ fieldset legend {
   border-radius: 8px;
   display: block;
 }
+
 .checkbox-wrapper input:checked + label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_801_33)'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_801_33'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
 }
