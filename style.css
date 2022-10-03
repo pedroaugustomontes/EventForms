@@ -225,3 +225,29 @@ footer .button:hover {
 input:invalid {
   border: 1px solid #ff1010;
 }
+
+@media (max-width: 640px) {
+  
+  .page {
+    max-width: 500px;
+  }
+  header {
+    margin-top: 32px;
+  }
+  header h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  form {
+    padding: 32px;
+  }
+  fieldset {
+    padding: 0;
+  }
+  .col-3 {
+    flex-wrap: wrap;
+  }
+  footer {
+    margin-bottom: 50px;
+  }
+}
